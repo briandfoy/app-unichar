@@ -3,6 +3,9 @@ use utf8;
 use strict;
 use warnings;
 
+use Encode qw(decode);
+use I18N::Langinfo qw(langinfo CODESET); 
+
 use charnames ();
 use List::Util;
 
@@ -18,7 +21,10 @@ my %transformation = (
 	'hex' => sub { hex $_[0] },
 	'int' => sub { $_[0] },
 	);
-	
+
+my $codeset = langinfo(CODESET);
+@ARGV = map { decode $codeset, $_ } @ARGV;
+
 foreach ( @ARGV ) {
 	say "Processing $_";
 	my( $code, $match );
