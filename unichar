@@ -1,3 +1,5 @@
+#!perl
+
 use 5.010;
 use utf8;
 use strict;
@@ -57,7 +59,7 @@ foreach ( @ARGV ) {
 	my $char = chr( $code );
 	$char = '<unprintable>' if $char !~ /\p{Print}/;
 	$char = '<whitespace>'  if $char =~ /\p{Space}/;
-	$char = '<control>'  if $char =~ /\p{Control}/;
+	$char = '<control>'     if $char =~ /\p{Control}/;
 
 	my $name = charnames::viacode( $code ) // '<no name found>';
 	
