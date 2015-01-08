@@ -1,11 +1,13 @@
-#!perl
 use v5.14;
 use utf8;
 
+package App::unichar;
 use strict;
 use warnings;
 
-my $module    = ''; die "Add module name";
+use File::Spec::Functions qw(catfile);
+
+my $module    = __PACKAGE__;
 my $github    = 'https://github.com/briandfoy/unichar';
 my $main_file = catfile( 'lib', split /::/, "$module.pm" );
 
@@ -17,7 +19,8 @@ my %WriteMakefile = (
 	'AUTHOR'        => 'brian d foy <bdfoy@cpan.org>',
 
 	'CONFIGURE_REQUIRES' => {
-		'ExtUtils::MakeMaker' => '6.64',
+		'ExtUtils::MakeMaker'   => '6.64',
+		'File::Spec::Functions' => '0',
 		},
 
 	'BUILD_REQUIRES' => {
