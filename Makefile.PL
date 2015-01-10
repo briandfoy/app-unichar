@@ -6,6 +6,8 @@ use strict;
 use warnings;
 
 my $module    = ''; die "Add module name";
+( my $dist = $module ) =~ s/::/-/g;
+
 my $github    = 'https://github.com/briandfoy/unichar';
 my $main_file = catfile( 'lib', split /::/, "$module.pm" );
 
