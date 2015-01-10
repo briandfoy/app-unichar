@@ -1,11 +1,11 @@
-#!perl
 use v5.14;
 use utf8;
 
+package 'Local';
 use strict;
 use warnings;
 
-my $module    = ''; die "Add module name";
+my $module    = __PACKAGE__;
 ( my $dist = $module ) =~ s/::/-/g;
 
 my $github    = 'https://github.com/briandfoy/unichar';
