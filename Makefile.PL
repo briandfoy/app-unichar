@@ -1,7 +1,7 @@
 use v5.14;
 use utf8;
 
-package 'Local';
+package Local;
 use strict;
 use warnings;
 
