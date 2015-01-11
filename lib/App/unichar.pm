@@ -9,6 +9,18 @@ use warnings;
 
 our $VERSION = '0.011';
 
+=encoding utf8
+
+=pod
+
+=head1 NAME
+
+App::unichar - get info about a character
+
+=head1 SYNOPSIS
+
+=cut
+
 use Encode qw(decode);
 use I18N::Langinfo qw(langinfo CODESET); 
 
