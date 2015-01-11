@@ -5,6 +5,8 @@ package Local;
 use strict;
 use warnings;
 
+use File::Spec::Functions qw(catfile);
+
 my $module    = __PACKAGE__;
 ( my $dist = $module ) =~ s/::/-/g;
 
@@ -41,7 +43,7 @@ my %WriteMakefile = (
 				url  => "$github.git",
 				web  => $github,
 				},
-			bugtraker => {
+			bugtracker => {
 				web    => "$github/issues",
 				},
 			homepage => $github,
