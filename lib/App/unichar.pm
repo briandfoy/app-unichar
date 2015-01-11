@@ -7,6 +7,8 @@ use utf8;
 use strict;
 use warnings;
 
+our $VERSION = '0.011';
+
 use Encode qw(decode);
 use I18N::Langinfo qw(langinfo CODESET); 
 

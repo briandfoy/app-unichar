@@ -1,4 +1,4 @@
-package Local;
+package App::unichar;
 use strict;
 use warnings;
 
