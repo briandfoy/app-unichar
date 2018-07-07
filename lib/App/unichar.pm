@@ -18,6 +18,39 @@ App::unichar - get info about a character
 
 =head1 SYNOPSIS
 
+Call it as a program with a name, character, or hex code number:
+
+	% perl lib/App/unichar.pm 'CHECK MARK'
+	Processing CHECK MARK
+		match type  name
+		code point  U+2713
+		decimal     10003
+		name        CHECK MARK
+		character   ✓
+
+	% perl lib/App/unichar.pm ✓
+	Processing CHECK MARK
+		match type  grapheme
+		code point  U+2713
+		decimal     10003
+		name        CHECK MARK
+		character   ✓
+
+	% perl lib/App/unichar.pm ✓
+	Processing CHECK MARK
+		match type  grapheme
+		code point  U+2713
+		decimal     10003
+		name        CHECK MARK
+		character   ✓
+
+	% perl lib/App/unichar.pm 0x2713
+	Processing 0x2713
+		match type  code point
+		code point  U+2713
+		decimal     10003
+		name        CHECK MARK
+		character   ✓
 
 =head1 DESCRIPTION
 
