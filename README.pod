@@ -2,7 +2,7 @@
 
 =encoding utf8
 
-=head1 The Local module
+=head1 The App::unichar module
 
 This is the I<README> for the L<App::unichar> Perl module. You're probably
 looking at this because you don't know where else to find what you're
