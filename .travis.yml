@@ -7,6 +7,7 @@ sudo: false
 language: perl
 perl:
     - "5.26"
+    - "5.28"
 
 before_install:
     - git clone git://github.com/travis-perl/helpers ~/travis-perl-helpers
