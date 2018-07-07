@@ -64,29 +64,40 @@ my %transformation = (
 my $codeset = langinfo(CODESET);
 @ARGV = map { decode $codeset, $_ } @ARGV;
 
-foreach ( @ARGV ) {
-	say "Processing $_";
-	my( $code, $match );
+run( @ARGV ) unless caller;
 
-	when( / \A (?: $r{u} | $r{h} | $r{d} ) \z /x ) {
-		$match = 'code point';
-		my( $key ) = keys %+;
-		$code = $transformation{$key}( $+{$key} );		
-		continue;
-		}
-	when( / \A ([A-Z\s]+) \z /ix ) {
-		$match = 'name';
-		$code = charnames::vianame( uc($1) );
-		continue;
-		}
-	when( / \A (\X) \z /x ) {
-		$match = 'grapheme';
-		$code = ord( $1 );
-		continue;
-		}
-	default {
-		unless( $code ) {
-			say "\tInvalid character or codepoint --> $_\n";
+sub run {
+	foreach ( @ARGV ) {
+		my $fallthrough = 1;
+		say "Processing $_";
+		my( $code, $match );
+
+		if( / \A (?: $r{u} | $r{h} | $r{d} ) \z /x ) {
+			$match = 'code point';
+			my( $key ) = keys %+;
+			$code = $transformation{$key}( $+{$key} );
+			$fallthrough = 0;
+			}
+		if( / \A ([A-Z\s]+) \z /ix ) {
+			$match = 'name';
+			$code = eval { charnames::vianame( uc($1) ) };
+			unless( defined $code ) {
+				say "\tCouldn't match '$1' to a code name";
+				next;
+				}
+			$fallthrough = 0;
+			}
+		if( / \A (\X) \z /x ) {
+			$match = 'grapheme';
+			$code = ord( $1 );
+			$fallthrough = 0;
+			}
+
+		if( $fallthrough ) {
+			unless( $code ) {
+				say "\tInvalid character or codepoint --> $_\n";
+				next;
+				}
 			next;
 			}
 
