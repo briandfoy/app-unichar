@@ -2,7 +2,7 @@
 
 package App::unichar;
 
-use 5.010;
+use 5.026;
 use utf8;
 use strict;
 use warnings;
@@ -68,26 +68,24 @@ foreach ( @ARGV ) {
 			say "\tInvalid character or codepoint --> $_\n";
 			next;
 			}
-		continue;
+
+		my $hex  = sprintf 'U+%04X', $code;
+		my $char = chr( $code );
+		$char = '<unprintable>' if $char !~ /\p{Print}/;
+		$char = '<whitespace>'  if $char =~ /\p{Space}/;
+		$char = '<control>'     if $char =~ /\p{Control}/;
+
+		my $name = charnames::viacode( $code ) // '<no name found>';
+
+		print <<~"HERE";
+			match type  $match
+			code point  $hex
+			decimal     $code
+			name        $name
+			character   $char
+
+		HERE
+
 		}
-	
-	my $hex  = sprintf 'U+%04X', $code;
-	my $char = chr( $code );
-	$char = '<unprintable>' if $char !~ /\p{Print}/;
-	$char = '<whitespace>'  if $char =~ /\p{Space}/;
-	$char = '<control>'     if $char =~ /\p{Control}/;
-
-	my $name = charnames::viacode( $code ) // '<no name found>';
-	
-	print <<"HERE";
-	match       $match
-	code point  $hex
-	decimal     $code
-	name        $name
-	character   $char
-
-HERE
-	
 	}
-		
-	
+
