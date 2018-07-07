@@ -23,7 +23,7 @@ name instead of the file location:
 	% perldoc App::unichar
 
 You can read the documentation and inspect the meta data at
-L<MetaCPAN|http://www.metacpan.org/module/App::unichar>.
+L<MetaCPAN|https://www.metacpan.org/module/App::unichar>.
 
 The standard module documentation has example uses in the SYNOPSIS
 section, but you can also look in the I<examples/> directory (if it's
