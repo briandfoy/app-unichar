@@ -65,7 +65,7 @@ my %WriteMakefile = (
 		},
 
 	'PREREQ_PM'     => {
-		'I18N/Langinfo.pm' => '0',
+		'I18N::Langinfo.pm' => '0',
 		},
 
 	'META_MERGE' => {
