@@ -18,6 +18,28 @@ App::unichar - get info about a character
 
 =head1 SYNOPSIS
 
+
+=head1 DESCRIPTION
+
+I use this as a little command-line program to quickly convert between
+values of characters.
+
+=head1 AUTHOR
+
+brian d foy, C<bdfoy@cpan.org>.
+
+=head1 SOURCE AVAILABILITY
+
+This module is in Github:
+
+	https://github.com/briandfoy/unichar
+
+=head1 COPYRIGHT & LICENSE
+
+Copyright 2011-2018 brian d foy
+
+This module is licensed under the Artistic License 2.0.
+
 =cut
 
 use Encode qw(decode);
