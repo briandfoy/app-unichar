@@ -43,7 +43,7 @@ This module is licensed under the Artistic License 2.0.
 =cut
 
 use Encode qw(decode);
-use I18N::Langinfo qw(langinfo CODESET); 
+use I18N::Langinfo qw(langinfo CODESET);
 
 use charnames ();
 use List::Util;
