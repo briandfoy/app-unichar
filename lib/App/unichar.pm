@@ -4,7 +4,6 @@ package App::unichar;
 
 use 5.026;
 use utf8;
-use strict;
 use warnings;
 
 our $VERSION = '0.012';
