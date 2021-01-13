@@ -103,11 +103,11 @@ sub run {
 			$code = $transformation{$key}( $+{$key} );
 			$fallthrough = 0;
 			}
-		if( / \A ([A-Z\s]+) \z /ix ) {
+		if( / \A ([A-Z\s]{2,}) \z /ix ) {
 			$match = 'name';
 			$code = eval { charnames::vianame( uc($1) ) };
 			unless( defined $code ) {
-				say "\tCouldn't match '$1' to a code name";
+				say "\tCouldn't match <$1> to a code name";
 				next;
 				}
 			$fallthrough = 0;
@@ -121,7 +121,6 @@ sub run {
 		if( $fallthrough ) {
 			unless( $code ) {
 				say "\tInvalid character or codepoint --> $_\n";
-				next;
 				}
 			next;
 			}
