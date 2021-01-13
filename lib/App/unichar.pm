@@ -5,6 +5,7 @@ package App::unichar;
 use 5.026;
 use utf8;
 use warnings;
+use open qw(:std :utf8);
 
 our $VERSION = '0.013';
 
