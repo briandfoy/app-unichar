@@ -69,7 +69,7 @@ This module is in Github:
 
 =head1 COPYRIGHT & LICENSE
 
-Copyright 2011-2018 brian d foy
+Copyright 2011-2021 brian d foy
 
 This module is licensed under the Artistic License 2.0.
 
