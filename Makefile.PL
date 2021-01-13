@@ -68,6 +68,8 @@ my %WriteMakefile = (
 		'I18N::Langinfo' => '0',
 		},
 
+	'EXE_FILES' => [ qw( script/unichar ) ],
+
 	'META_MERGE' => {
 		'meta-spec' => { version => 2 },
 		resources => {
