@@ -36,14 +36,6 @@ Call it as a program with a name, character, or hex code number:
 		name        CHECK MARK
 		character   ✓
 
-	% perl lib/App/unichar.pm ✓
-	Processing CHECK MARK
-		match type  grapheme
-		code point  U+2713
-		decimal     10003
-		name        CHECK MARK
-		character   ✓
-
 	% perl lib/App/unichar.pm 0x2713
 	Processing 0x2713
 		match type  code point
