@@ -1,5 +1,6 @@
 #!/usr/bin/perl
 
+our $VERSION = '0.013';
 use App::unichar;
 
 App::unichar->run( @ARGV );
