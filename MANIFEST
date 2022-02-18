@@ -1,4 +1,5 @@
 Changes
+CITATION.cff
 INSTALL.SKIP
 lib/App/unichar.pm
 LICENSE
@@ -10,3 +11,4 @@ script/unichar
 t/load.t
 t/test_manifest
 xt/changes.t
+xt/citation.t
