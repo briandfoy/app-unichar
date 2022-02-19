@@ -16,6 +16,8 @@
 
 =for HTML <a href="https://metacpan.org/pod/App::unichar"><img src="https://img.shields.io/cpan/v/App-unichar.svg" /></A>
 
+=for HTML <a href="https://zenodo.org/badge/latestdoi/1256539"><img src="https://zenodo.org/badge/1256539.svg" alt="DOI"></a>
+
 =head1 The App::unichar module
 
 This is the I<README> for the L<App::unichar> Perl module. You're probably
