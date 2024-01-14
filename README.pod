@@ -2,15 +2,15 @@
 
 =encoding utf8
 
-=for HTML <a href="https://www.github.com/briandfoy/unichar/actions?query=workflow%3Amacos"><img src="https://www.github.com/briandfoy/unichar/workflows/macos/badge.svg"></a>
+=for HTML <a href="https://www.github.com/briandfoy/app-unichar/actions?query=workflow%3Amacos"><img src="https://www.github.com/briandfoy/app-unichar/workflows/macos/badge.svg"></a>
 
-=for HTML <a href="https://www.github.com/briandfoy/unichar/actions?query=workflow%3Aubuntu"><img src="https://www.github.com/briandfoy/unichar/workflows/ubuntu/badge.svg"></a>
+=for HTML <a href="https://www.github.com/briandfoy/app-unichar/actions?query=workflow%3Aubuntu"><img src="https://www.github.com/briandfoy/app-unichar/workflows/ubuntu/badge.svg"></a>
 
-=for HTML <a href="https://www.github.com/briandfoy/unichar/actions?query=workflow%3Awindows"><img src="https://www.github.com/briandfoy/unichar/workflows/windows/badge.svg"></a>
+=for HTML <a href="https://www.github.com/briandfoy/app-unichar/actions?query=workflow%3Awindows"><img src="https://www.github.com/briandfoy/app-unichar/workflows/windows/badge.svg"></a>
 
-=for HTML <a href='https://ci.appveyor.com/project/briandfoy/unichar'><img src='https://ci.appveyor.com/api/projects/status/vsbacgelq7osu5hf' /></a>
+=for HTML <a href='https://ci.appveyor.com/project/briandfoy/app-unichar'><img src='https://ci.appveyor.com/api/projects/status/vsbacgelq7osu5hf' /></a>
 
-=for HTML <a href='https://coveralls.io/github/briandfoy/unichar?branch=master'><img src='https://coveralls.io/repos/github/briandfoy/unichar/badge.svg?branch=master' alt='Coverage Status' /></a>
+=for HTML <a href='https://coveralls.io/github/briandfoy/app-unichar?branch=master'><img src='https://coveralls.io/repos/github/briandfoy/uniapp-unicharchar/badge.svg?branch=master' alt='Coverage Status' /></a>
 
 =for HTML <a href="https://github.com/briandfoy/unichar/blob/master/LICENSE"><img src="https://img.shields.io/cpan/l/App-unichar.svg" /></a>
 
@@ -78,16 +78,16 @@ the source repository:
 
 =over 4
 
-=item *	L<https://github.com/briandfoy/unichar>
+=item *	L<https://github.com/briandfoy/app-unichar>
 
 =back
 
 If you find a problem, file a ticket in the L<issue
-tracker|https://github.com/briandfoy/unichar/issues>:
+tracker|https://github.com/briandfoy/app-unichar/issues>:
 
 =over 4
 
-=item *	L<https://github.com/briandfoy/unichar/issues>
+=item *	L<https://github.com/briandfoy/app-unichar/issues>
 
 =back
 

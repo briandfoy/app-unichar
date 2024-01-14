@@ -58,7 +58,7 @@ brian d foy, C<briandfoy@pobox.com>.
 
 This module is in Github:
 
-	https://github.com/briandfoy/unichar
+	https://github.com/briandfoy/app-unichar
 
 =head1 COPYRIGHT & LICENSE
 
