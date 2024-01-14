@@ -52,7 +52,7 @@ values of characters.
 
 =head1 AUTHOR
 
-brian d foy, C<bdfoy@cpan.org>.
+brian d foy, C<briandfoy@pobox.com>.
 
 =head1 SOURCE AVAILABILITY
 
