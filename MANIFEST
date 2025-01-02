@@ -8,6 +8,7 @@ MANIFEST			This list of files
 MANIFEST.SKIP
 README.pod
 script/unichar
+SECURITY.md
 t/load.t
 t/test_manifest
 xt/changes.t
