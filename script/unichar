@@ -33,7 +33,7 @@ Call it as a program with a name, character, or hex code number:
 		character   ✓
 
 	% unichar ✓
-	Processing CHECK MARK
+	Processing ✓
 		match type  grapheme
 		code point  U+2713
 		decimal     10003
