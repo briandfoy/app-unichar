@@ -8,7 +8,7 @@ use warnings;
 use open qw(:std :utf8);
 use experimental qw(signatures);
 
-our $VERSION = '0.013';
+our $VERSION = '0.014';
 
 =encoding utf8
 
