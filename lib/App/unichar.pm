@@ -63,7 +63,7 @@ This module is in Github:
 
 =head1 COPYRIGHT & LICENSE
 
-Copyright 2011-2024 brian d foy
+Copyright  © 2011-2026, brian d foy
 
 This module is licensed under the Artistic License 2.0.
 
